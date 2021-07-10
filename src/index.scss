@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$base-color: antiquewhite;
+
+body {
+  background-color: $base-color !important;
+}
+
+.shortenForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 15%;
+  & > div {
+    margin: 2rem 0;
+  }
+  .shortenButton {
+    width: 40%;
+    align-self: center;
+  }
+  .shortUrlInput {
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+  .copyAlert {
+    max-width: 150px;
+    color: rgb(54, 49, 49);
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    align-self: flex-end;
+    opacity: 0.8;
+    height: 45px;
+    margin-top: 0;
+  }
+
+  .circularProgress {
+    align-self: center;
+  }
+}
+
+.bgMenu {
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.footer {
+  position: absolute;
+  font-family: cursive;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: #57534e;
+  color: antiquewhite;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    font-size: 1.2rem;
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    .ftIcon {
+      align-self: center;
+    }
+    > * {
+      margin-left: 10px;
+    }
+    @media only screen and (max-width: 492px) {
+      width: 57%;
+      font-size: 0.9rem;
+      > * {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  .MuiPaper-root {
+    background-color: whitesmoke !important;
+  }
+  a {
+    color: inherit;
+  }
+}
