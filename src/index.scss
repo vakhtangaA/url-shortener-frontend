@@ -1,12 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-$base-color: antiquewhite;
+$base-color: whitesmoke;
 
 body {
   background-color: $base-color !important;
+  .exceptFooter {
+    min-height: calc(100vh - 100px);
+  }
 }
 
 .shortenForm {
@@ -49,9 +53,7 @@ body {
 }
 
 .footer {
-  position: absolute;
   font-family: cursive;
-  bottom: 0;
   width: 100%;
   height: 100px;
   background: #57534e;
@@ -92,4 +94,8 @@ a {
   a {
     color: inherit;
   }
+}
+
+.MuiDataGrid-root.MuiDataGrid-root {
+  background: white;
 }

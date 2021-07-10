@@ -13,7 +13,7 @@ const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#D4D4D4",
+      main: "#607d8b",
     },
     secondary: {
       main: "#525252",

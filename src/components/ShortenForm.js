@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import validator from "validator";
 import axios from "axios";
+import validator from "validator";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import { TextField, Button } from "@material-ui/core";
@@ -51,6 +51,7 @@ function ShortenForm() {
       axios
         .post("/api/shorten", {
           url: longUrl,
+          visited: 0,
         })
         .then((res) => {
           setLoading(false);

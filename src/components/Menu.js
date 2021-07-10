@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function SimpleMenu({ logout }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleClick = event => {
+  const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -36,7 +36,9 @@ export default function SimpleMenu({ logout }) {
         <Link to="profile">
           <MenuItem onClick={handleClose}>Profile</MenuItem>
         </Link>
-        <MenuItem onClick={handleClose}>Dashboard</MenuItem>
+        <Link to="dashboard">
+          <MenuItem onClick={handleClose}>Dashboard</MenuItem>
+        </Link>
         <MenuItem
           onClick={() => {
             handleClose();

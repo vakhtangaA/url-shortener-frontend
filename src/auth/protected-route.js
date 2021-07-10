@@ -5,7 +5,7 @@ import { withAuthenticationRequired } from "@auth0/auth0-react";
 const ProtectedRoute = ({ component, ...args }) => (
   <Route
     component={withAuthenticationRequired(component, {
-      onRedirecting: () => <h1>Loading...</h1>,
+      onRedirecting: () => <h3>Loading...</h3>,
     })}
     {...args}
   />
